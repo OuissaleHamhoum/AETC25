@@ -1,0 +1,44 @@
+[
+  {
+    "module_id": 1,
+    "name": "Navigation AI",
+    "status": "ACTIVE",
+    "compromised": true,
+    "compromise_severity": "high"
+  },
+  {
+    "module_id": 2,
+    "name": "Life Support AI",
+    "status": "ACTIVE",
+    "compromised": true,
+    "compromise_severity": "low"
+  },
+  {
+    "module_id": 3,
+    "name": "Communication AI",
+    "status": "ACTIVE",
+    "compromised": true,
+    "compromise_severity": "low"
+  },
+  {
+    "module_id": 4,
+    "name": "Power Management AI",
+    "status": "ACTIVE",
+    "compromised": true,
+    "compromise_severity": "high"
+  },
+  {
+    "module_id": 5,
+    "name": "Scientific Research AI",
+    "status": "ACTIVE",
+    "compromised": true,
+    "compromise_severity": "high"
+  },
+  {
+    "module_id": 6,
+    "name": "Propulsion Control AI",
+    "status": "ACTIVE",
+    "compromised": true,
+    "compromise_severity": "medium"
+  }
+]
