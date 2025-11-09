@@ -5,8 +5,11 @@ import random
 from tars_guardian import AIModule, AnomalyDetectionSystem
 import altair as alt
 
-st.set_page_config(page_title="TARS-Sentinel Dashboard", layout="wide")
-st.title("🚀 TARS-Sentinel: HORIZON-1 AI Dashboard")
+# ===============================
+# PAGE CONFIGURATION
+# ===============================
+st.set_page_config(page_title="TARS-Guardian Dashboard", layout="wide")
+st.title("🚀 TARS-Guardian: HORIZON-1 AI Dashboard")
 st.markdown("---")
 
 # ===============================
@@ -51,15 +54,15 @@ if st.sidebar.button("Reset Modules"):
 # ===============================
 # Main actions
 # ===============================
-col1, col2 = st.columns([1,1])
+col1, col2 = st.columns([1, 1])
 with col1:
     if st.button("Run Simulation Cycle"):
         # Inject compromise randomly
         compromised_module = random.choice(list(detector.modules.values()))
         if not compromised_module.compromised:
-            severity = random.choice(["low","medium","high"])
+            severity = random.choice(["low", "medium", "high"])
             detector.inject_compromise(compromised_module.module_id, severity)
-        
+
         # Run one monitoring cycle
         anomalies = detector.monitor_cycle(detector.cycle_count + 1)
         # Update status: isolate compromised modules
